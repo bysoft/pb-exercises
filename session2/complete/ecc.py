@@ -356,7 +356,7 @@ class ECCTest(TestCase):
         )
 
         # iterate over the multiplications
-        for s, x1_raw, y1_raw, x2_raw, y2_raw in multiplications:
+        for s, x1_raw, y1_raw, x2_raw, y2_raw in multiplications: # s is scalar
             # Initialize points this way:
             # x = FieldElement(192, prime)
             # y = FieldElement(105, prime)

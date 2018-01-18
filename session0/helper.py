@@ -8,11 +8,13 @@ def run_test(test):
 
 
 def bytes_to_str(b, encoding='ascii'):
+    return b.decode('ascii');
     '''Returns a string version of the bytes'''
     raise NotImplementedError
 
 
 def str_to_bytes(s, encoding='ascii'):
+    return s.encode('ascii')
     '''Returns a bytes version of the string'''
     raise NotImplementedError
 

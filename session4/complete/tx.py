@@ -196,7 +196,7 @@ class TxIn:
         else:
             if cls.mainnet_socket is None:
                 cls.mainnet_socket = cls.context.socket(zmq.DEALER)
-                cls.mainnet_socket.connect('tcp://mainnet.libbitcoin.net:9091')
+                cls.mainnet_socket.connect('tcp://mainnet2.libbitcoin.net:9091')
             return cls.mainnet_socket
 
     def fetch_tx(self, testnet=False):
